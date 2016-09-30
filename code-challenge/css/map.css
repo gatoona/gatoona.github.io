@@ -150,7 +150,7 @@ html, body, #map {
 }
 
 .content-image-container .content-image{
-  width: 300px;
+  width: 200px;
   line-height: 0;
   padding: 5px;
   border: 2px solid rgb(255, 255, 255);
@@ -171,6 +171,10 @@ html, body, #map {
     top: 50px;
     margin-top: 0px;
   }*/
+
+  .content-image-container .content-image{
+    width: 300px;
+  }
 
   .content-close{
     display: table-cell;
