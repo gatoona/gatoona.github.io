@@ -307,7 +307,7 @@ html, body, #map {
 .popup-container{
   z-index: 999999;
   position: absolute;
-  top: 150px;
+  top: 0px;
   left: 0px;
   width: 100%;
   height: auto;
@@ -395,8 +395,8 @@ html, body, #map {
 @media (min-width: 640px) {
 
   .popup-container{
-    position: fixed;
-    top: 150px;
+    position: absolute;
+    top: 50px;
     left: 0px;
     width: 100%;
     height: 100%;
