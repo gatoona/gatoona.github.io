@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Featured Projects Map - Alta Planning + Design</title>
+    <meta name="description" content="Great Portland Destinations">
+    <meta name="author" content="TriMet">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1">
+
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <link rel="stylesheet" href="css/MarkerCluster.css" />
+
+</head>
+
+<body>
+    <div class="popup-container hidden">
+        <div class="popup-container-content">
+            <div class="popup-container-content-header">
+                <div class="popup-container-content-header-text">Featured Projects<br>Alta Planning + Design</div>
+                <div class="popup-container-content-header-close">
+                    <button onclick="hidePopUp(); return false;" style="cursor: pointer; border: 0px;background-color: transparent;width: 24px;"><img src="img/cancel.png"></button>
+                </div>
+            </div>
+            <div class="popup-container-content-body">
+                <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://gatoona.wufoo.com/forms/z189aop0clnrti/#public" target="_blank">
+
+                    <header id="header" class="info">
+                        <p>Welcome to Alta's featured projects map. If you would like to get updates on new and current projects, complete the form below.</p>
+                    </header>
+                    <ul>
+                        <li id="foli9" class="notranslate      ">
+                            <label class="desc" id="title9" for="Field9">
+                                Name
+                            </label>
+                            <span>
+        <input id="Field9" name="firstname" type="text" class="field text fn input" value="" size="8" tabindex="1"       />
+        <label for="Field9">First</label>
+        </span>
+                            <span>
+        <input id="Field10" name="lastname" type="text" class="field text ln input" value="" size="14" tabindex="2" />
+        <label for="Field10">Last</label>
+        </span>
+                        </li>
+                        <li id="foli12" class="notranslate      ">
+                            <label class="desc" id="title12" for="Field12">
+                                Email
+                                <span id="req_12" class="req">*</span>
+                            </label>
+                            <div>
+                                <input id="Field12" name="email" type="email" spellcheck="false" class="field text medium input" value="" maxlength="255" tabindex="3" required />
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="form-error hidden">Please enter a valid email address.</div>
+            <div class="popup-container-content-footer">
+                <button type="submit" class="button button-submit">Sign Up</button>
+            </div>
+        </div>
+        <div class="popup-container-bg"></div>
+    </div>
+
+
+    <div class="content-container hidden">
+        <div class="content-close">
+            <div><img src="img/cancel.png"></div>
+        </div>
+        <div class='content-image-container'>
+            <div class='content-image'><img style="width:100%;" src=''></div>
+        </div>
+        <div class='content-info'>
+            <div class="content-title"></div>
+            <div class="content-city"></div>
+            <div class="content-description"></div>
+            <div class="content-button"><a class='site-visit' href="#">Learn More</a></div>
+        </div>
+    </div>
+
+    <div class="dd-header">
+        <div class='dd-header-logo animated slideInDown'>
+            <img src="img/alta.png" style="width: 100%;">
+        </div>
+        <div class="dd-header-menu-button"><img src="img/menu_icon.svg"></div>
+        <div class="dd-header-menu animated hidden-menu-xs">
+            <div class="dd-header-menu-item">
+                <a href='#' id="menu-signup">
+                    <div style="display: table;">
+                        <div style="display: table-cell; vertical-align: middle; line-height: 0;">
+                            <img src='img/email.png'>
+                        </div>
+                        <div style="display: table-cell; vertical-align: middle; line-height: 0; padding-left: 10px;">Sign Up</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="map" style="width:100%; height: 100%;"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script src="js/FeaturedProjects.js"></script>
+    <script src="js/MarkerCluster.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
