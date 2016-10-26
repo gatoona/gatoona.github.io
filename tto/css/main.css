@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color:#FFF;
+  color:#FFF;
+  font-family: 'Hind', sans-serif;
+  overflow:hidden;
+/*  cursor: none;*/
+}
+
+.container{
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.vtop{
+  vertical-align: top;
+}
+
+.left-side{
+  display: table-cell;
+  background-color:#000;
+  height:auto;
+  width: 35%;
+  background-image: url("../img/ads/01.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+/*  display: none;*/
+}
+
+.right-side{
+  display: table-cell;
+  background-color:#333;
+  padding: 20px;
+  width: 65%;
+  height: 100%;
+  position: relative;
+}
+
+.right-side-header{
+  display: table;
+  width: 100%;
+  height: 15%;
+}
+
+.header-left-cell{
+  display: table-cell;
+  width: 80%;
+  text-align: left;
+}
+
+.header-left-cell h1 {
+  font-size: 7em;
+  line-height: 1em;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-right-cell{
+  display: table-cell;
+  width: 20%;
+  text-align: right;
+}
+
+.header-right-cell img{
+  width: 80%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.current-time{
+  font-size: 2.2em;
+  font-weight: 700;
+  line-height: 1em;
+  margin-top: 20px;
+}
+
+.right-side-body{
+  margin-top: 20px;
+}
+
+.arrivals{
+  height: auto;
+  width: 100%;
+}
+
+.arrival{
+  background-color: #333333;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: table;
+  font-size: 2.5em;
+  padding-bottom: 20px;
+}
+
+.arrival div{
+  vertical-align: middle;
+  line-height: 1em;
+  padding: 20px;
+  display: table-cell;
+}
+
+.arrival-route{
+  width: 10%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5em;
+  background-color: #999999;
+  
+}
+
+.arrival-destination{
+  background-color: #FFFFFF;
+  color: #000;
+  font-weight: 600;
+  padding-left: 20px;
+  width: 60%;
+}
+
+.arrival-time{
+  background-color: #D9D9D9;
+  color: #333;
+  text-align: center;
+  border-left: 2px solid #ccc;
+  width: 15%;
+  font-weight: 700;
+}
+
+.arrival-time:last-child {
+    background-color: #F2F2F2;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 0px;
+  text-align: center;
+  display: inline-block !important;
+  border: 5px solid #FFF;
+}
+
+.route-100{
+  background-color: #0F6AAC;
+}
+.route-200{
+  background-color: #028953;
+}
+.route-90{
+  background-color: #D31F43;
+}
+.route-190{
+  background-color: #FFC524;
+}
+.route-290{
+  background-color: #D25D13;
+}
+.route-203{
+  background-color: #000000;
+}
+.route-193{
+  background-color: #84bd00;
+  span {
+    display:none;
+  }
+  &:after{
+    content: 'NS';
+    color: #FFF;   
+  }
+}
+.route-194{
+  background-color: #ce0f69;
+  span {
+    display:none;
+  }
+  &:after{
+    content: 'A';
+    color: #FFF;   
+  }
+}
+.route-195{
+  background-color: #0093b2;
+  span {
+    display:none;
+  }
+  &:after{
+    content: 'B';
+    color: #FFF;   
+  }
+}
+
+.blink {
+  animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { background-color: #F7E975; }
+}
+
+.right-side-footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.footer-content{
+  background-color: #333333;
+  width: 100%;
+  height: auto;
+  z-index: 9999;
+  position: relative;
+  /*!  */
+  /*!  */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.gradient{
+  background: -moz-linear-gradient(top,  rgba(51,51,51,0) 0%, rgba(51,51,51,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(51,51,51,0) 0%,rgba(51,51,51,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(51,51,51,0) 0%,rgba(51,51,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00333333', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+  width: 100%;
+  height: 20px;
+  margin-top: -20px;
+  position: absolute;
+}
+
+.twitter{
+  display: table;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.twitter-logo{
+  display: table-cell;
+  background-color: #55ACEF;
+  vertical-align: middle;
+  text-align: center;
+  padding: 20px;
+  width: 10%;
+  height: 50px;
+  line-height: 0px;
+}
+
+.twitter-logo img{
+ height: 100%;
+}
+
+.twitter-content{
+  display: table-cell;
+  background-color: #1C6399;
+  width: 90%;
+  vertical-align: middle;
+  padding: 10px 20px;
+  font-weight: 700;
+}
+
+.twitter-content-handle{
+  width: 100%;
+  font-weight: 300;
+  font-size: 1.2em;
+  
+}
+
+.twitter-content-tweet{
+  font-size: 2em;
+  line-height: 1em;
+  width: 100%;
+}
+
+.twitter-content-date{
+  width: 100%;
+  text-align: right;  
+}
+
+.twitter-triangle{
+  width: 100%;
+  text-align: right;
+  height: 20px;
+  display: table-row;
+}
+
+.twitter-triangle div{
+  width: 0px;
+  border-right: 23px solid transparent;
+  margin-left: auto;
+  position: absolute;
+  border-top: 30px solid rgb(28, 99, 153);
+  border-left: 23px solid transparent;
+  height: 0px; 
+  right: 0px;
+  margin-right: 120px;
+
+}
+
+.footer-logos{
+  display: table;
+  width: 100%;
+  height: 50%;
+  padding: 20px 0;
+}
+
+.footer-logo{
+  display: table-cell;
+  line-height: 0;
+  width: 100%;
+  position: relative;
+}
+
+.footer-logo-left{
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.footer-logo-left div{
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+}
+
+.footer-logo-left div img{
+  height: 100%;
+  max-height: 70px;
+}
+
+.footer-logo-right{
+  text-align: right;
+  vertical-align: bottom;
+}
+
+.footer-logo-right div img{
+  height: 100%;
+  max-height: 50px;
+}
